@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="stuff"></div>
+
+    <div id="product1"></div>
+    <div id="product2"></div>
+
+    <div id="random"></div>
+
+    <script src="products.js"></script>
+    <script src="storingjason.js"></script>
+    <button onclick="console.log(enArray)">enArray</button>
+    <script>
+      document.getElementById("random").innerHTML = db.products[0].theme;
+    </script>
+  </body>
+</html>
