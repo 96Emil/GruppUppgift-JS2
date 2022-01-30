@@ -98,6 +98,7 @@ function ready() {
       ");cartTotalPrice();showCart() '>Add  to cart</button>" +
       //"<button onclick='enArray.push(" + db.products[i].theme + "," + db.products[i].theme + ")'>Add  to cart</button>"
       //"<br><br><br><br><br><br>" +
+
       "</div>";
   }
   document.getElementById("stuff").innerHTML = text;
