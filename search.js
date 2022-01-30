@@ -43,7 +43,7 @@ function render_lists(result) {
       "<div class='name'>" +
       result[index].name +
       "</div>" +
-      "<div class='price'>" +
+      "<div class='price'>€" +
       result[index].price +
       "</div>" +
       "<div class='gender'>" +
