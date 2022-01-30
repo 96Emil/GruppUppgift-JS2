@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styleProduct.css" />
+  </head>
+  <body>
+    <div id="product"></div>
+
+    <script>
+      var dbAsJson = window.localStorage.getItem("mydb");
+      //console.log(dbAsJson);
+      var db = JSON.parse(dbAsJson);
+      //console.log(db);
+      document.getElementById("product").innerHTML =
+        "<div class='text'>" +
+        "<img class='medium-img' src=" +
+        db.products[0].image +
+        ">" +
+        "</img>" +
+        "<div class='prod-text'>" +
+        "<div class='name'>" +
+        "Product: " +
+        db.products[0].name +
+        "</div>";
+    </script>
+    <script src="storingjason.js"></script>
+  </body>
+</html>

@@ -227,6 +227,10 @@ button {
   border-radius: 5px;
 }
 
+.removeButton {
+  text-align: center;
+}
+
 /*  "<div class='text'>" + "<div class='image'>" + "<img src=" + db.products[i].image + ">" + "</img>" + "</div>" + "<div class='prod-text'>" +
             "<div class='name'>" +
             db.products[i].name + "</div>" +
