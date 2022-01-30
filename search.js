@@ -21,9 +21,12 @@ const myJSON =
 */
 //json-data
 //const db = JSON.parse(myJSON);
-function Redirect(x) {
+function Redirect2(x) {
+  console.log("TEST: " + x);
   window.location = "product" + x + ".html";
+  console.log(window.location);
 }
+
 //koppla en variable till ett element
 var ul = document.getElementById("products-list");
 //funktion för skriva ut sökresultat
@@ -56,9 +59,9 @@ function render_lists(result) {
       "</div>" +
       "</div>" +
       "<br>" +
-      "<button onclick='Redirect(" +
+      "<button onmousedown='Redirect(" +
       result[index].id +
-      ")'>Details</button>" +
+      ");'>Details</button>" +
       "</div>";
   }
   ul.innerHTML = li;

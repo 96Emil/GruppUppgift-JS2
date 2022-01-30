@@ -85,7 +85,6 @@ p {
 .container-dropdown form input {
   border: none;
   outline: none;
-  box-shadow: none;
   width: 100%;
   font-size: 16px;
   padding: 8px 10px;
@@ -94,7 +93,6 @@ p {
 .container-dropdown form ul {
   overflow: scroll;
   height: 50vh;
-  right: 0px;
 }
 
 .results-list {
@@ -107,9 +105,10 @@ p {
 
 .prod {
   border: lightgrey 2px solid;
-  width: 90px;
+  width: 100%;
   margin: 5px;
-  float: right;
+  float: left;
+  text-align: left;
 }
 
 .text {
@@ -120,7 +119,6 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  left: 50%;
 }
 
 .stuff {
@@ -206,8 +204,9 @@ img {
 }
 
 .small-img {
-  height: 80px;
+  height: 150px;
   width: auto;
+  margin-left: 20px;
 }
 
 .buttons {
@@ -217,20 +216,15 @@ img {
   border: lightgrey 2px solid;
   width: 250px;
   margin: auto;
-  color: rgb(39, 38, 38);
+  color: rgb(56, 56, 56);
 }
 
 button {
   align-self: center;
-  background-color: rgb(78, 75, 75);
+  background-color: grey;
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
-}
-
-.removeButton {
-  display: flex;
-  justify-content: center;
 }
 
 /*  "<div class='text'>" + "<div class='image'>" + "<img src=" + db.products[i].image + ">" + "</img>" + "</div>" + "<div class='prod-text'>" +
