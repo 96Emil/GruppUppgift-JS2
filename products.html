@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Products</title>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleProduct.css" />
     <link
       rel="stylesheet"
@@ -152,7 +151,7 @@
             enArray[i].name +
             "</div>" +
             "<div class='price'>" +
-            "Price: €" +
+            "Price: " +
             enArray[i].price +
             "</div>" +
             "<div class='gender'>" +
@@ -175,7 +174,7 @@
             "</div>" +
             "</div>" +
             "<div class='removeButton' >" +
-            "<button class='remove-Cart-Item' onclick='removeCartItem(" +
+            "<button class='center' onclick='removeCartItem(" +
             i +
             ");showCart();cartTotalPrice()'>Remove item</button>" +
             "</div>" +
