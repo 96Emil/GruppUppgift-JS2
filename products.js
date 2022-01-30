@@ -53,7 +53,7 @@ function ready() {
       db.products[i].name +
       "</div>" +
       "<div class='price'>" +
-      "Price: " +
+      "Price: €" +
       db.products[i].price +
       "</div>" +
       "<div class='gender'>" +
