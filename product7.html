@@ -1,95 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styleProduct.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <img src="img/logo.png" class="logo" alt="" />
-          </div>
-          <nav>
-            <ul id="Menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-            </ul>
-          </nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo.png" class="logo" alt="" />
+                </div>
+                <nav>
+                    <ul id="Menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
     </div>
     <div id="product"></div>
 
     <div class="footer">
-      <div class="continer">
-        <div class="row">
-          <div class="footer-col">
-            <img src="img/logo.png" alt="logo" />
-          </div>
+        <div class="continer">
+            <div class="row">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="logo" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="img/facebook.jpg" alt="logo" />
+                    <img src="img/instagram.png" alt="logo" />
+                    <img src="img/twitter.jpg" alt="logo" />
+                </div>
+                <div class="footer-col-2"></div>
+                <div class="footer-col-3">
+                    <p>
+                        <b>Copyright:</b> Grupp 1: Martina Thege, Emil Söderback, Yit Singh, Meli Åkerman
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="footer-col-1">
-            <img src="img/facebook.jpg" alt="logo" />
-            <img src="img/instagram.png" alt="logo" />
-            <img src="img/twitter.jpg" alt="logo" />
-          </div>
-          <div class="footer-col-2"></div>
-          <div class="footer-col-3">
-            <p>
-              <b>Copyright:</b> Grupp 1: Martina Thege, Emil Söderback, Yit
-              Singh, Meli Åkerman
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
 
     <script>
-      var dbAsJson = window.localStorage.getItem("mydb");
-      //console.log(dbAsJson);
-      var db = JSON.parse(dbAsJson);
-      //console.log(db);
-      document.getElementById("product").innerHTML =
-        "<div class='text'>" +
-        "<img class='medium-img' src=" +
-        db.products[6].image +
-        ">" +
-        "</img>" +
-        "<div class='prod-text'>" +
-        "<div class='name'>" +
-        "Product: " +
-        db.products[6].name +
-        "</div>" +
-        "<div class='price'>" +
-        "Price: €" +
-        db.products[6].price +
-        "</div>" +
-        "<div class='gender'>" +
-        "Gender: " +
-        db.products[6].gender +
-        "</div>" +
-        "<div class='color'>" +
-        "Color: " +
-        db.products[6].color +
-        "</div>" +
-        "<div class='size'>" +
-        "Size: " +
-        db.products[6].size +
-        "</div>" +
-        "<div class='theme'>" +
-        "Theme: " +
-        db.products[6].theme +
-        "</div>" +
-        "<br>" +
-        "</div>" +
-        "</div>";
+        var dbAsJson = window.localStorage.getItem("mydb");
+        var db = JSON.parse(dbAsJson);
+        document.getElementById("product").innerHTML =
+            "<div class='text'>" +
+            "<img class='medium-img' src=" +
+            db.products[6].image +
+            ">" +
+            "</img>" +
+            "<div class='prod-text'>" +
+            "<div class='name'>" +
+            "Product: " +
+            db.products[6].name +
+            "</div>" +
+            "<div class='price'>" +
+            "Price: €" +
+            db.products[6].price +
+            "</div>" +
+            "<div class='gender'>" +
+            "Gender: " +
+            db.products[6].gender +
+            "</div>" +
+            "<div class='color'>" +
+            "Color: " +
+            db.products[6].color +
+            "</div>" +
+            "<div class='size'>" +
+            "Size: " +
+            db.products[6].size +
+            "</div>" +
+            "<div class='theme'>" +
+            "Theme: " +
+            db.products[6].theme +
+            "</div>" +
+            "<br>" +
+            "</div>" +
+            "</div>";
     </script>
     <script src="storingjason.js"></script>
-  </body>
+</body>
+
 </html>
